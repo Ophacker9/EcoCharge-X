@@ -2,52 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EcoCharge X</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0fff4;
-      color: #222;
+      font-family: Arial, sans-serif;
+      background: #f4fff4;
       margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 20px;
+      color: #222;
       text-align: center;
     }
+
     h1 {
-      font-size: 2em;
-      color: #28a745;
-      margin-bottom: 0.5em;
+      font-size: 24px;
+      color: #2a9d8f;
     }
+
     p {
-      font-size: 1.1em;
-      max-width: 400px;
-      margin: 0 20px 1.5em;
-    }
-    .button {
-      background-color: #28a745;
-      color: white;
-      padding: 14px 28px;
       font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: 0.3s;
+      margin: 10px 0 30px;
     }
+
+    .button {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      padding: 15px;
+      font-size: 16px;
+      color: white;
+      background: #2a9d8f;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
     .button:hover {
-      background-color: #218838;
+      background: #21867a;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to EcoCharge X</h1>
-  <p>The Meme Coin that fuels the green revolution on TON Blockchain. Earn, refer, and enjoy the fun of eco-friendly crypto!</p>
-  <a href="https://t.me/ECOCHARGEX_BOT/EcoX" class="button">🚀 Launch EcoX Bot</a>
+  <p>This is the official Mini App for the EcoCharge X community. Stay tuned for exciting features and updates.</p>
+
+  <button class="button" onclick="launchSoon()">🚀 Launch Features (Coming Soon)</button>
+  <button class="button" onclick="Telegram.WebApp.close()">❌ Close</button>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+
+    function launchSoon() {
+      alert("Launching soon! Stay connected.");
+    }
+  </script>
 </body>
 </html>
